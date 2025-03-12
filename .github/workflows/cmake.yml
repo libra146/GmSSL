@@ -1,10 +1,11 @@
 name: CMake
 
-on:
+on: 
   push:
     branches: [ master ]
   pull_request:
     branches: [ master ]
+  workflow_dispatch:  # 新增手动触发选项
 
 env:
   # Customize the CMake build type here (Release, Debug, RelWithDebInfo, etc.)
